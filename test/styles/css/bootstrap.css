@@ -3480,7 +3480,7 @@ fieldset[disabled] .btn-secondary-inv.active {
 
 /*Button cancel*/
 .btn-cancel {
-  color: #949494;
+  color: #656565;
   background-color: #eaeaea;
 }
 .btn-cancel:focus,
@@ -5518,15 +5518,23 @@ a.thumbnail.active {
   color: #333;
 }
 .alert {
-    padding: 30px;
-    margin-bottom: 15px;
+    padding: 20px 15px;
     /* border: 1px solid #FF435A; */
     font-size: 1.4em;
     font-weight: 200;
     background-color: #FF435A;
-    margin: 0 -30px 15px;
+    margin: -5px 0 20px;
     color: #fff;
 }
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .alert {
+    padding: 25px 15px;
+      margin: -10px 0 20px;
+  }
+}
+
 .alert h4 {
   margin-top: 0;
   color: inherit;
@@ -6602,9 +6610,17 @@ button.close {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
   .modal-body {
-    padding: 15px 30px 15px;
+    padding: 15px 15px 15px;
   }
 }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .modal-body {
+    padding: 15px 25px 15px;
+  }
+}
+
 .modal-section{
   border-bottom: 1px solid #e5e5e5;
 }
@@ -7487,7 +7503,7 @@ button.close {
 }
 .dottedPattern{
   background: url('../images/dotBk.png') repeat;
-  padding:10px;
+  padding:5px;
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -8054,7 +8070,7 @@ p.DRNedit_items_last {
   }*/
 }
 .wallet-primary{
-    border-left:4px #00A1E0 solid;
+    border-left:4px #4497ff solid;
  }
 .wallet-alert{
     border-left:4px #FF435A solid;
@@ -8089,7 +8105,7 @@ p.DRNedit_items_last {
     position:absolute;
     display: block;
     font-size:1.9em;
-    color:#00A1E0;
+    color:#4497ff;
     top:-10px;
     right: -8px;
 
@@ -8209,6 +8225,13 @@ dd.cardIcon{
     padding:20px 0 20px;
     font-weight: 500;
 }
+.emailWrap{
+    display:block;
+    width:100%;
+    font-size:1.8em;
+    padding:10px 0 10px;
+    font-weight: 500;
+}
 .ctaWrap{
     padding:10px 0;
 }
@@ -8228,7 +8251,6 @@ dd.cardIcon{
     margin: 0;
     font-weight: 200;
     color: #454545;
-    text-align: left;
     font-size: inherit;
 }
 .resultCol{
@@ -8274,20 +8296,27 @@ dd.cardIcon{
 .resultWrap .biller{
     text-align: right;
     margin-top: 2px;
-    font-size: 0.6em;
+    font-size: 0.8em;
+    line-height: 1.1;
+    font-weight:200;
+}
+.emailWrap .emailReceipt{
+    text-align: right;
+    margin-top: 2px;
+    font-size: 1em;
     line-height: 1.1;
     font-weight:600;
 }
-.resultWrap .emailReceipt{
-    text-align: right;
-    margin-top: 2px;
-    font-size: 0.7em;
-    line-height: 1.1;
-    font-weight:600;
+.emailWrap .emailReceipt div:first-child{
+    margin-bottom:6px;
 }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
+  .resultWrap .biller{
+    font-size: 0.8em;
+    font-weight:200;
+}
   .resultWrap .emailReceipt{
       font-size: 1em;
 
@@ -8303,8 +8332,8 @@ dd.cardIcon{
 @media (min-width: 1200px) { 
   
 }
-.resultWrap .emailReceipt .formlabel{
-    font-weight: 400;
+.emailWrap .emailReceipt .formlabel{
+    font-weight: 200;
 }
 
 .resultWrap .cardIcon{
@@ -8432,7 +8461,7 @@ dd.cardIcon{
 
 
 .formSelect dd ul li a {
-  font-size:1.2em;
+  font-size:1.1em;
 }
 
 .formSelect dd ul li a.typeNorm dl dt.dataTitle {
@@ -8715,7 +8744,7 @@ font-weight: 100;
 }
 
 dd .dataSelectWrap .edit{
-  color: #8B8B8B;
+  color: #4497ff;
   font-size: 1.4em;
   font-weight: 200;
   display: block;
@@ -8819,7 +8848,8 @@ dd .dataSelectWrap .edit{
 .datePicker{
   width: 100%;
   overflow: hidden;
-  background-color:#f3f3f3;
+  background-color: #EFEFEF;
+  border: 1px solid #D2D2D2;
   position: relative;
   margin-bottom:20px;
 }
