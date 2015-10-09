@@ -8273,6 +8273,24 @@ dd.cardIcon{
     line-height: 1.1;
     font-weight:600;
 }
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .resultWrap .emailReceipt{
+      font-size: 1em;
+
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  
+}
 .resultWrap .emailReceipt .formlabel{
     font-weight: 400;
 }
