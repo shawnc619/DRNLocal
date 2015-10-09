@@ -2508,7 +2508,7 @@ label {
     margin: 8px 17px 0;
   }
 }
-}
+
 input[type="search"] {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -7485,11 +7485,20 @@ button.close {
   border-bottom: 5px solid #4497ff;
 
 }
+.dottedPattern{
+  background: url('../images/dotBk.png') repeat;
+  padding:10px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+.dottedPattern{
+  background: url('../images/dotBk.png') repeat;
+  padding:50px;
+}
+}
 main.container{
   background-color: white;
-  -webkit-box-shadow: 0px 1px 1px 1px rgba(140,140,140,0.6);
--moz-box-shadow: 0px 1px 1px 1px rgba(140,140,140,0.6);
-box-shadow: 0px 1px 1px 1px rgba(140,140,140,0.6);
 }
 button.xxx{
   background:none;
@@ -7552,7 +7561,10 @@ body{
     padding:80px 15px 60px;
   }
   main.container{
-    margin-top:-83px;
+    -webkit-box-shadow: 0px 1px 1px 1px rgba(140,140,140,0.6);
+  -moz-box-shadow: 0px 1px 1px 1px rgba(140,140,140,0.6);
+  box-shadow: 0px 1px 1px 1px rgba(140,140,140,0.6);
+    margin-top:-183px;
   }
   .logo{
   padding-top:12px;
