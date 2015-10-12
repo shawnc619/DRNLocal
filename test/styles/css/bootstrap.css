@@ -2704,7 +2704,7 @@ input[type="search"] {
   position: relative;
   display: block;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
 }
 .radio label,
 .checkbox label {
@@ -8527,6 +8527,31 @@ dd.cardIcon{
 }
 
 
+.navOnTab2 li a{
+  color: #454545;
+  padding:8px 0;
+}
+.navOnTab2 > li:first-child > a{
+  border-right:none;
+}
+.navOnTab2 > li:last-child > a {
+  border-left:1px solid #ccc;
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+  .navOnTab2 li a, .navOnTab2 li:last-child a{
+    padding:12px 0;
+  }
+
+  .navOnTab2 > li:first-child > a{
+    border-radius: 2px 0 0 2px;
+  }
+  .navOnTab2 > li:last-child > a {
+    border-radius: 0 2px 2px 0; 
+  }
+}
+
 /*Select Dropdown*/
 .formSelect{
   position: relative;
@@ -8969,7 +8994,7 @@ table.paymentDateInfo tr td:nth-child(2){
   table.paymentDateInfo tr td{
     padding-right:25px
   }
-}*/
+}
 .instructionWrapPayment table{
   font-size: 1.4em
 }
@@ -9022,6 +9047,9 @@ table.paymentDateInfo tr td:nth-child(2){
       padding-top:30px;
       padding-bottom:5px;
     }
+    .ctaWrapSingle{
+    padding:20px 0;
+}
     .ctaWrapSingle2{
         padding:0 0 30px;
     }
@@ -9037,6 +9065,9 @@ table.paymentDateInfo tr td:nth-child(2){
       padding-top:35px;
       padding-bottom:5px;
     }
+    .ctaWrapSingle{
+    padding:25px 0;
+}
     .ctaWrapSingle2{
         padding:0 0 35px;
     }
@@ -9060,15 +9091,15 @@ table.paymentDateInfo tr td:nth-child(2){
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-  .registWrap div.DOB{
-    padding:0 15px 0 0;
+  .registWrap div.paddingRight{
+    padding:0 8px 0 0;
   }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-  .registWrap div.DOB{
-    padding:0 20px 0 0;
+  .registWrap div.paddingRight{
+    padding:0 12px 0 0;
   }
 }
 .OtherAddress{
