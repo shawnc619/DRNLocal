@@ -7817,11 +7817,13 @@ h1,
     margin: 0 -50px;
   }*/
 }
-.info-Wrap:hover{
+.info-Wrap:hover, .info-Wrap2:hover{
     color:#454545;
     background-color: #F6FCFF;
   }
-
+.info-block{
+  float: left;
+}
 .info-block h3{
     font-size:2.5em;
     font-weight: 100;
@@ -7830,7 +7832,7 @@ h1,
 .info-block p{
     font-weight: 500;
     line-height: 1.1;
-    padding:3px 0;
+    padding:2px 0;
   }
 .no-transition {
     -webkit-transition: height 0.01s;
@@ -8060,7 +8062,7 @@ p.DRNedit_items_last {
     padding:0 15px 0 11px;
     border-left:4px transparent solid;
   }
-.info-Wrap-Wallet2{
+.info-Wrap-Wallet2, .info-Wrap2{
     display:block;
     color:#454545;
     cursor: pointer;
@@ -8068,14 +8070,24 @@ p.DRNedit_items_last {
     padding:20px 15px 20px 11px;
     border-left:4px transparent solid;
   }
+.info-Wrap2 table{
+  width: 100%;
+}
+.info-Wrap2 table tr td:first-child{
+  width: 85%;
+}
+.info-Wrap2 table tr td:last-child{
+  width: 15%;
+}
+
 .info-Wrap-Wallet2 table{
   width: 100%;
 }
 .info-Wrap-Wallet2 table tr td:first-child{
-  width: 15%;
+  width: 13%;
 }
 .info-Wrap-Wallet2 table tr td:nth-child(2){
-  width: 70%;
+  width: 72%;
 }
 .info-Wrap-Wallet2 table tr td:last-child{
   width: 15%;
