@@ -7822,10 +7822,6 @@ h1,
     background-color: #F6FCFF;
   }
 
-.info-block{
-    max-width: 70%;
-    float:left;
-  }
 .info-block h3{
     font-size:2.5em;
     font-weight: 100;
@@ -7833,6 +7829,8 @@ h1,
   }
 .info-block p{
     font-weight: 500;
+    line-height: 1.1;
+    padding:3px 0;
   }
 .no-transition {
     -webkit-transition: height 0.01s;
@@ -7939,7 +7937,7 @@ h1,
     margin: 5px 0;
     padding: 0;
     font-size: 2.8em;
-    line-height:0.8;
+    line-height:0.9;
     font-weight: 100;
 }
 .dataStd{
@@ -8032,15 +8030,6 @@ p.DRNedit_items_last {
 }
 
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-  .info-block{
-      max-width: none;
-      float:left;
-    }
-  
-}
-
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
   .iconShortcut {
@@ -8071,12 +8060,35 @@ p.DRNedit_items_last {
     padding:0 15px 0 11px;
     border-left:4px transparent solid;
   }
-
+.info-Wrap-Wallet2{
+    display:block;
+    color:#454545;
+    cursor: pointer;
+    margin:0 -15px;
+    padding:20px 15px 20px 11px;
+    border-left:4px transparent solid;
+  }
+.info-Wrap-Wallet2 table{
+  width: 100%;
+}
+.info-Wrap-Wallet2 table tr td:first-child{
+  width: 15%;
+}
+.info-Wrap-Wallet2 table tr td:nth-child(2){
+  width: 70%;
+}
+.info-Wrap-Wallet2 table tr td:last-child{
+  width: 15%;
+}
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
   .info-Wrap-Wallet{
     margin:0 -25px;
-    padding:0 25px 0 21px;
+    padding:25px 25px 25px 21px;
+  }
+  .info-Wrap-Wallet2{
+    margin:0 -25px;
+    padding:25px 25px 25px 21px;
   }
 }
 
@@ -8093,16 +8105,16 @@ p.DRNedit_items_last {
 .wallet-alert{
     border-left:4px #FF435A solid;
  }  
-.info-Wrap-Wallet:hover{
+.info-Wrap-Wallet:hover, .info-Wrap-Wallet2:hover{
     color:#454545;
     background-color: #F6FCFF;
 }
-.info-Wrap-Wallet h3{
+.info-Wrap-Wallet h3, .info-Wrap-Wallet2 h3{
     font-size:2.5em;
     font-weight: 100;
     margin:0 0 3px;
 }
-.info-Wrap-Wallet h4{
+.info-Wrap-Wallet h4, .info-Wrap-Wallet2 h4{
     font-size:1.8em;
     line-height: 1.4;
     margin:0 0 3px;
