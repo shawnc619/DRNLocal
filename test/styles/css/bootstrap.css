@@ -9020,10 +9020,16 @@ table.paymentDateInfo tr td:nth-child(2){
   }
 }
 .instructionWrapPayment table{
-  font-size: 1.4em
+  font-size: 1.4em;
+  margin-top: 8px;
+  border:1px #C7C7C7 solid;
 }
 .instructionWrapPayment table tr td{
-  padding-right:10px;
+  padding: 15px 10px;
+  border-top:1px #C7C7C7 solid;
+}
+.instructionWrapPayment table tr:nth-child(odd){
+ background-color: #ECECEC;
 }
 .instructionWrapPayment table tr td:first-child{
   width:50%;
