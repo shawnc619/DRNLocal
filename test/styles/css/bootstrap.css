@@ -5101,7 +5101,9 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 .navbar-inverse {
   background-color: #000;
+  opacity: 0.9;
 }
+
 .navbar-inverse .navbar-brand {
   color: #9d9d9d;
 }
@@ -5532,26 +5534,43 @@ a.thumbnail.active {
   color: #333;
 }
 .alert {
-    padding: 20px 15px;
+    padding: 20px 12px;
     /* border: 1px solid #FF435A; */
-    font-size: 1.4em;
+    font-size: 1.6em;
     font-weight: 200;
     background-color: #FF435A;
-    margin: -5px 0 20px;
+    margin: -5px 0 15px;
     color: #fff;
 }
-
+.notify {
+    padding: 20px 12px;
+    /* border: 1px solid #FF435A; */
+    font-size: 1.6em;
+    font-weight: 200;
+    background-color: #4497FF;
+    margin: -5px 0 15px;
+    color: #fff;
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-  .alert {
-    padding: 25px 15px;
-      margin: -10px 0 20px;
+  .alert, .notify {
+    margin: -10px 0 20px;
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .alert, .notify {
+    padding: 25px 17px;
   }
 }
 
-.alert h4 {
+.alert h4, .notify h4 {
   margin-top: 0;
   color: inherit;
+}
+.alert a, .notify a {
+  color: #fff;
+  text-decoration: underline;
 }
 .alert .alert-link {
   font-weight: bold;
@@ -7904,8 +7923,6 @@ h1,
     float: left;
     margin: 0px 9px 0 0;
 }
-
-
 .returnBiller{
     margin:-20px 0 20px;
     padding:0;
@@ -7923,6 +7940,23 @@ h1,
     color:#8b8b8b;
     background-color: transparent;
   }
+.descript2{
+    margin:0 0 20px;
+    padding:0;
+    padding-top: 6px;
+    font-size:1.4em;
+    line-height: 1.1;
+    color:#8b8b8b;
+    background-color: transparent;
+  }
+ul.pwValidate{
+  margin:0 0 0 0;
+  padding-left:20px;
+  font-size: 0.9em
+}
+ul.pwValidate li{
+  padding:6px 0;
+}
 
 .dataLabelMjr{
     font-weight: 100;
@@ -8660,7 +8694,7 @@ dd.cardIcon{
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
   .formSelect dt a div.typeNorm { 
-    padding: 12px 0;
+    padding: 24px 20px;
   }
 }
 
@@ -9033,15 +9067,14 @@ table.paymentDateInfo tr td:nth-child(2){
 }
 .instructionWrapPayment table tr td:first-child{
   width:50%;
+  text-align: right
 }
 .instructionWrapPayment table tr td:nth-child(2){
   font-weight: bold;
 }
 
 @media (min-width: 768px) { 
-  .instructionWrapPayment table{
-  font-size: 1.6em
-}
+
 .instructionWrapPayment table tr td{
   padding-right:25px
 }
@@ -9135,7 +9168,14 @@ table.paymentDateInfo tr td:nth-child(2){
 .OtherAddress{
   display: none;
 }
-
+.forgotpw{
+    margin:-20px 0 20px;
+    padding:0;
+    padding-top: 10px;
+    font-weight: 200;
+    font-size:1.6em;
+    background-color: white;
+  }
 
 
 
